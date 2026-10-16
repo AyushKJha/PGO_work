@@ -11,6 +11,8 @@ A backend project for collecting agent traces, profiling cost and latency, evalu
 
 **Status:** development in progress on the default `backend-v1` branch. The repository contains backend services, SDKs, infrastructure, tests, and a separate landing page. A public backend deployment has not been verified.
 
+> **[Step-by-step user guide (PDF)](docs/USER_GUIDE.pdf)**
+
 ## Inside the system
 
 | Area | Source |
@@ -30,8 +32,8 @@ The API accepts OTLP JSON at `/v1/traces` and `/v1/otlp/v1/traces`. Protected op
 Use Python 3.11+:
 
 ```sh
-git clone --branch backend-v1 https://github.com/AyushKJha/PCO_work.git
-cd PCO_work
+git clone --branch backend-v1 https://github.com/AyushKJha/PGO_work.git
+cd PGO_work
 python -m venv .venv
 ```
 
