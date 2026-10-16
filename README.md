@@ -11,8 +11,6 @@ A backend project for collecting agent traces, profiling cost and latency, evalu
 
 **Status:** development in progress on the default `backend-v1` branch. The repository contains backend services, SDKs, infrastructure, tests, and a separate landing page. A public backend deployment has not been verified.
 
-> **[Step-by-step user guide (PDF)](docs/USER_GUIDE.pdf)**
-
 ## Inside the system
 
 | Area | Source |
@@ -26,6 +24,16 @@ A backend project for collecting agent traces, profiling cost and latency, evalu
 | Architecture notes | [docs/backend-architecture.md](docs/backend-architecture.md) |
 
 The API accepts OTLP JSON at `/v1/traces` and `/v1/otlp/v1/traces`. Protected operations require tenant-scoped credentials. Connector instrumentation is metadata-only by default and fails open if export is unavailable.
+
+## Try the backend locally
+
+1. Clone the `backend-v1` branch and create a Python 3.11+ virtual environment using the commands below.
+2. Install the development extras and run the test suite before starting the API.
+3. Open the API docs at `http://127.0.0.1:8000/docs` after Uvicorn starts. Configure the environment and database using the project architecture notes before sending trace data.
+4. Instrument a development agent with the Python or TypeScript connector. Send OTLP JSON to `/v1/traces` or `/v1/otlp/v1/traces`, then inspect the resulting trace and profiling records.
+5. Compare recorded runs and export recommendations only after reviewing the underlying reports and measurements.
+
+The README commands start a development API only; they do not provision a production database, tenant credentials, or a hosted service. Historical benchmark replay is a proxy, not a live provider benchmark.
 
 ## Local development
 
