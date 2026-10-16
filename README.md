@@ -1,6 +1,6 @@
-<img src="docs/banner.svg" alt="Project overview" width="100%">
-
 # AgentPGO
+
+Related to **[AgentPGO, built in collaboration with Aurorium Nexus](https://github.com/Auro-rium/agent-PGO)**. This repository holds my backend development work.
 ### Profile-guided optimization for AI agents.
 
 A backend project for collecting agent traces, profiling cost and latency, evaluating runs, and comparing optimization candidates before exporting recommendations.
