@@ -1,3 +1,5 @@
+<img src="docs/banner.svg" alt="AgentPGO backend — trace profiling and evaluation" width="100%">
+
 # AgentPGO
 
 Related to **[AgentPGO, built in collaboration with Aurorium Nexus](https://github.com/Auro-rium/agent-PGO)**. This repository holds my backend development work.
